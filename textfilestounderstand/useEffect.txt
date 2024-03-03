@@ -1,0 +1,19 @@
+Useeffect hook is a hook which takes a function as an argument which gets executed when ever 
+a template is rendered into the page ,
+i.e it executes the function soon after starting the program , because initally their will
+be some contents which will be rendered (blogs in our case)
+and also when ever a blog is deleted it will again execute the statemtns inside the function
+of Useeffect hook , as when we delete a blog then it will set the blogs using useState hook ,
+hencec it is again going to re-render tempalte , hence it execute the statements of 
+use Effect hook function again .
+
+but if we want to execute the function in useEffect hook only sometimes , we use second argument 
+in which we specify the dependencies ,
+if dependency array is specified as an empty array , then it executes the funciton in useEffect 
+only once at the starting when template is rendered at starting
+we can also specify the set of hooks for which we want to execute the fucntion in useEffect .
+eg :
+useEffect(()=>{
+    //function defination
+},[name])
+this function inside useEffect will only be executed when the name hook changes its state .

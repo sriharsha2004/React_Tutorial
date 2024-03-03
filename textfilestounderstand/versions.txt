@@ -1,0 +1,21 @@
+while doing project we might face several issues and errors and resolve all these issues searching
+in the stackoverflow and other websites .
+after creating a react app , degrade the version of react app using the following command
+npm install --save react@17.0.1 react-dom@17.0.1
+then only few fuccntions will work like Link tag you are using will not work of react-dom is 
+verison 18 and above 
+and after downgrading the version repplace the code in index.js with below code
+change one imported statemtn as (import ReactDOM from 'react-dom'; remove client from it )
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+Also downgrade the version of react-router-dom to ^5.2.0 using (npm i react-router-dom@5.2.0)
+So that Switch works
+
+Follow the above instructions strictly otherwise you are going to face several issues related
+to versions and errors .....

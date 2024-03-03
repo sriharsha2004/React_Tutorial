@@ -1,0 +1,15 @@
+props are the ones which are maily used to tracsfer the data from one component to 
+other component  ,
+for example  : if we want to loop through all the blogs in various locations , we need to 
+declare the same blogs array at diffreent locations which is time consuming and not a 
+good approach to do it ,
+hence inorder to optimize it we can use props , so that we can traccsfer data from one
+compnentn to other compnetnt blogs array in this case , 
+and we can direclty get ht access to blogs array in other component hence we can loop through
+it when ever required .
+Note : props are used to transfer the data from the parent component to its child componentss.
+
+we pass the required data through the componenet it self,
+and in the other components all the data will be stored in an object known as props ,
+now we can access what ever data we want from props
+for reference refer to Home.js and bloglist.js components .

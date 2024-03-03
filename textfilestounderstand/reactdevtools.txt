@@ -1,0 +1,11 @@
+react development tools are the ones whcih are mainly used to understand the structure of react
+code , this can be found from browser , and add the extension React development tools
+This extension automatically reflects in the inspect tool , using this we ca review various 
+components present our react project from the inspect tool , 
+And for hooks we can also get the current state of the hook
+And also it is used to get the location of the compoonent inside the html code which we get when 
+we inspect .
+THis tool provides the components and profilers section along with the other browser development 
+tools like console,application,network,source etc..
+Components section -> gives the component tree,props,
+explore it to understand it properly

@@ -1,0 +1,24 @@
+We know that app is the component which is rendered into index.html from index.js file .
+Hence app component is said to be the root component for the component tree 
+The way in whihch app component is included in index.js , in the same way we can include the
+componnts inside the app components andd furthur inside this component we can add more componners
+hence it forms a component tree 
+
+component tree :
+            app 
+    header  middle  footer
+      |        |        |
+    navbar  blogs    copyrights
+
+Note : when we add css to any of the component automaticcally thr same css applies to all the 
+components which are displayed in that page .
+It is because all the css files will be added into index.html file (inspect the console to understand)
+
+We can also give inline css , we need to give it inside the object -> {}
+and this object nneds to be included inside another braces -> {} as we are in jsx 
+so <div style = {{
+    color : "white"
+}}></div>
+
+the outer brace is for dynamic , inner is a object inside which we need to give css ;
+

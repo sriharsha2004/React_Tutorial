@@ -1,0 +1,9 @@
+In this we are extracting the data from the the json file insteard of using database ,
+for that purpose we created a file called as data folder and then include db.json file ,
+and create a rest api from that data using the bellow command ,
+then using the fetch we fetch the blogs data insteard of declaring statically inside the 
+compnenent .
+command -> npx json-server --watch data/db.json --port 8000
+data/db.json is the path where the data is available
+after executing this command we get the api localhost....
+now we can fetch the data from this new api which is obtained .

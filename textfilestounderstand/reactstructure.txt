@@ -1,0 +1,50 @@
+To create a react project we use the command create-react-app
+its always better to use tis command , as it provides certain build in code , we need not type 
+our code from scratch and also , bubble and webpack are also configured automatically which
+are responsible for running and compilin the Jsx and react . 
+If we dont use the command for creating a react app , then we need to configure them independently
+
+
+Use command npx create-react-app <name_of_project>
+Note: 
+npx is a tool which is used to run (create-react-app) code in the internet . And 
+installs the new project with the name <name_of_project>
+
+steps: navigate where we need to create react app
+-> then use the above command , which createes a project structure inside the folder(whose name is 
+<name_of_project>)
+hence use cd <name_of_project>
+then use code . => to open the project in the vs code editor.
+
+Finally it opens the program structure in the vs code ,
+public folder : This contains all the files which are public to the browser,
+It contains the index.html file , which contains a div tag with root as id , hence all the components
+which are present and created in the src folder will be renderred inside this div tag .
+
+src folder : This folder contains all the components which can be rendered into the div tag inside the 
+index.html file . 
+It contains the file by the name index.js , from which we render all the components like app component
+which are present inside the src folder itself into the index.html file inside the public folder
+, To understand it properly navigate to index.js .
+Indide the index.js we have used React.StrictMode which is used to give the warnings to the users
+in the console .
+
+babble is the one which takes the entire code present in the components which is actually written 
+in jsx and converts them into the html format and renders the html coponents into the index.html.
+
+Every component contains the function whose name shoud always start with a capital letter , 
+And this function returns a a component which is return in jsx and rendered into index.html from the 
+index.js file present in src folder. 
+
+Their are some differences between Jsx files and html files :
+the class(in html)  is ClassName in Jsx,
+we use this attribute because the components are the js files eg : app.js 
+hence when we use class (this is a reserved word in javascript)
+hence insteard of class we use ClassName in jsx
+
+Note: In the older versions of react less than version 17 , we needd to import react in every 
+component , above that we need not import the react .
+import React from 'react'
+
+And at the end of every component we need to export the component , import the componets inside 
+the index.js file to render components into the index.html file . 

@@ -1,0 +1,10 @@
+Why react ??
+A react is a single page application (SPA) unlike others , that means it requests the server , 
+to get the page only once(index.html) later when ever user wants to navigate to other pages ,
+this request will not be handled by server , the react itself handles the new requests and 
+changes the pages , based on the route that user wanna access .
+
+React consists of react-router which intercepts all the requests of the server (prevents 
+the requests to the server) and informs the react to render the components ,
+that means the the request is send ti sever only once, and to handle furhtur requests , it
+will be handled by react-router and react.

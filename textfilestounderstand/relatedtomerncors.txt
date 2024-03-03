@@ -1,0 +1,24 @@
+cors stands for cross origin resource sharing , it is a type of error which is mainly caused
+when ever the frontend development server is working on certain port number ,
+and backend server is running on some other port number and if we request the 
+server(which is runnning on different port) from frontend then it causes cors error.
+
+we can handle this error in two ways ,
+we can install a nodemodule known as cors in the backend and use an additional middleware in app.js
+app.use(cors())
+
+we can also add a proxy in the package.json file present inside the frontend , And assign
+the proxy to the respective port number of the backend server.
+
+eg:if frontend developmetn server i.e react is working on port number 3000 , if the server at
+the backend is listening to port number 4000 , it causes a cors error .
+add the below line in package.json file inside the fronend .
+
+add this in the first line of package.json file in the frontend side
+"proxy" : "http://localhost:4000",
+...
+..
+...
+remaining scripts
+
+

@@ -1,0 +1,10 @@
+Inside the components we can also write Javascript this needds to be writterned before return()
+and inorder to access the data present inside the javascipt into the return( ) block 
+we use curly braces {} to include data inside the jsx.
+Note : By default react will take data from js and automatically converts it onto a string and 
+places them into curly braces irrespective of number,array etc.. 
+eg : if we use { [1,2,3,4] } inside the jsx it outputs as 1234 in browser 
+booleans and objects cannot be placed in the return() using curly braces .
+we can write any kind of valid javaScript inside the curly braces .
+we can also include a dynamic href fro a tag in return() block
+
